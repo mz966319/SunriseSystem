@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="480.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="user.EditStudentController">
+   <children>
+      <HBox alignment="TOP_RIGHT" layoutX="11.0" layoutY="52.0" prefHeight="319.0" prefWidth="434.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="411.0" prefWidth="327.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <TextField fx:id="studentName" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="217.0">
+                           <HBox.margin>
+                              <Insets right="17.0" top="7.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="اسم الطالب:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="15.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <TextField fx:id="fatherPhone" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="217.0">
+                           <HBox.margin>
+                              <Insets right="4.0" top="7.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="رقم هاتف الاب:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="15.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <TextField fx:id="motherPhone" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="217.0">
+                           <HBox.margin>
+                              <Insets right="9.0" top="7.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="رقم هاتف الام:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="15.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <TextField fx:id="grade" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="217.0">
+                           <HBox.margin>
+                              <Insets right="45.0" top="7.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="الصف:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="15.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <ComboBox fx:id="busNumber" prefHeight="25.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets right="26.0" top="7.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label text="رقم الباص:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="57.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <TextField fx:id="path" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="217.0">
+                           <HBox.margin>
+                              <Insets right="42.0" top="7.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="المسار:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="15.0" prefHeight="42.0" prefWidth="327.0">
+                     <children>
+                        <ComboBox fx:id="subscription" prefHeight="25.0" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets right="33.0" top="7.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <Label text="الاشتراك:">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label contentDisplay="RIGHT" layoutX="144.0" layoutY="14.0" text="تعديل معلومات الطالب" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveChangesButton" layoutX="332.0" layoutY="407.0" mnemonicParsing="false" onAction="#saveChangesButtonClicked" prefHeight="25.0" prefWidth="87.0" text="حفظ التعديل" />
+      <Button fx:id="cancelEditButton" layoutX="57.0" layoutY="407.0" mnemonicParsing="false" onAction="#cancelEditButtonClicked" prefHeight="25.0" prefWidth="87.0" text="اٍلغاء" />
+   </children>
+</AnchorPane>

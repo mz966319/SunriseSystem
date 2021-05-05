@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="sqlite-jdbc-3.32.3.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Winter/sqlite-jdbc-3.32.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/commons-collections-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/itextpdf-5.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Winter/jars/chosen/jasperreports-5.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
